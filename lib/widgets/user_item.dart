@@ -17,7 +17,7 @@ class UserItem extends StatelessWidget {
       child: Row(
         children: [
           CircleAvatar(
-            radius: 40,
+            radius: 30,
             backgroundImage: NetworkImage(image),
           ),
           const SizedBox(width: 20),
