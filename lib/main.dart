@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:random_user/providers/user_provider.dart';
 import 'package:random_user/screens/homepage.dart';
 
-
 void main() {
   runApp(const MyApp());
 }

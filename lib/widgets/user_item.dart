@@ -4,6 +4,7 @@ class UserItem extends StatelessWidget {
   String name, email, image;
 
   UserItem({
+    super.key,
     required this.name,
     required this.email,
     required this.image,
@@ -12,7 +13,7 @@ class UserItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(10.0),
       child: Row(
         children: [
           CircleAvatar(

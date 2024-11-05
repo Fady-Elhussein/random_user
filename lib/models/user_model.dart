@@ -4,12 +4,12 @@ class UserModel {
   UserModel({required this.result});
 
   factory UserModel.fromJson(Map<String, dynamic> json) {
-    List<dynamic> fullData ;
+    List<dynamic> fullData = [];
 
-    fullData= json["results"].map(
+    fullData =  json["results"].map(
       (user) {
         return {
-          "fullName": user["name"]["first"] + " " + user["name"]["last"],
+          "name": user["name"]["first"] + " " + user["name"]["last"],
           "email": user["email"],
           "image": user["picture"]["thumbnail"],
         };

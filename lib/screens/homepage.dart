@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                 final user = result[index];
 
                 return UserItem(
-                  name: user["fullName"],
+                  name: user["name"],
                   email: user["email"],
                   image: user["image"],
                 );
